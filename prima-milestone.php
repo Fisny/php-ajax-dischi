@@ -29,7 +29,7 @@ $database = [
         'title' => 'Brave new World',
         'author' => 'Iron Maiden',
         'year' => 2000,
-        'poster' => 'https://i.ebayimg.com/images/g/1GwAAOSwFytaKr7l/s-l300.jpg'
+        'poster' => 'https://e.snmc.io/i/1200/s/a2a2ecb1bf60d82c2d4adadc1bd19529/2712641'
     ],
     [
         'title' => 'One more car, one more rider',
@@ -47,20 +47,54 @@ $database = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <?php
-        foreach($database as $singola){ ?>
-            <div class="container">
-                    <div class="php">
-                        <?php echo "<img src=\"{$singola['poster']}\">"; ?>
-                        <h2 class="titolo"> <?php echo $singola['title'] ?> </h2>
-                        <p class="paragrafo"> <?php echo $singola['author'] ?> </p>
-                        <p class="paragrafo"> <?php echo $singola['year'] ?> </p>
-                    </div>
+    <div class="container-fluid ">
+        <div class="bar d-flex align-items-center"><img src="https://loghi-famosi.com/wp-content/uploads/2020/09/Logo-della-Spotify.png" alt=""></div>
+            <div class="container row">
+                <div class="col d-flex">
+
+                    <?php
+
+                        foreach($database as $singola){ ?>
+                            
+                            <div class="paragrafo">
+                                <?php echo "<a href=\"\"><img class=\"immagine\"  src=\"{$singola['poster']}\"></a>"; ?>
+                                <h3 class="titolo"> <?php echo $singola['title'] ?> </h3>
+                                <p class="autore"> <?php echo $singola['author'] ?> </p>
+                                <p class="anno"> <?php echo $singola['year'] ?> </p>
+                            </div>
+                            
+                        <?php }
+                    ?>
+    
+                </div>
             </div>
-        <?php }
-    ?>
+
+            <div class="container row">
+                <div class="col d-flex">
+                    
+                    <?php
+
+                        foreach($database as $singola){ ?>
+                            
+                            <div class="paragrafo">
+                                <?php echo "<a href=\"\"><img class=\"immagine\"  src=\"{$singola['poster']}\"></a>"; ?>
+                                <h3 class="titolo"> <?php echo $singola['title'] ?> </h3>
+                                <p class="autore"> <?php echo $singola['author'] ?> </p>
+                                <p class="anno"> <?php echo $singola['year'] ?> </p>
+                            </div>
+                            
+                        <?php }
+                    ?>
+    
+                </div>
+            </div>
+    </div>
+
 </body>
 </html>

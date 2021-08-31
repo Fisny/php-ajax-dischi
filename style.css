@@ -1,0 +1,36 @@
+.container-fluid{
+    background-color: #1e2d3b;
+}
+
+.bar{
+    background-color: #2e3a46;
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+.bar img{
+    width: 50px;
+}
+
+.paragrafo{
+    margin: 50px 5px;
+    padding: 25px;
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    background-color: #2e3a46;
+}
+
+
+.immagine{
+    width: 150px;
+    height: 150px;
+}
+
+.titolo{
+    color: white;
+}
+
+.autore, .anno{
+    color: #757f80;
+}
